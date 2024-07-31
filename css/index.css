@@ -1,0 +1,61 @@
+body {
+    background-color:lavender;
+    color:#1576df;
+    font-family: 'Arial', sans-serif; 
+}
+
+section {
+    margin: 5px 0;
+    padding: 7px;
+}
+.center-aligned {
+    text-align: center;
+}
+
+h1, h2{
+    color: #982d2d;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.75em;
+}
+
+.name-header {
+    font-size: 2em;
+    font-weight: bold;
+    color: #007acc;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 190px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+}
+
+.experience-item {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.connect-link {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.connect-link:hover {
+    text-decoration: underline;
+}
+
