@@ -1,5 +1,5 @@
 body {
-    background-color:lavender;
+    background-color:lightblue;
     color:#1576df;
     font-family: 'Arial', sans-serif; 
 }
@@ -7,9 +7,6 @@ body {
 section {
     margin: 5px 0;
     padding: 7px;
-}
-.center-aligned {
-    text-align: center;
 }
 
 h1, h2{
@@ -26,7 +23,6 @@ h2 {
 
 .name-header {
     font-size: 2em;
-    font-weight: bold;
     color: #007acc;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -49,7 +45,36 @@ h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.job-title {
+    flex: 1;
+    text-align: left;
+}
+
+.job-dates {
+    flex: 1;
+    text-align: right;
+    color: #333;
+    font-size: 0.9em;
+}
+
+.job-description {
+    margin-top: 5px;
+    font-size: 0.95em;
+    color: #555;
+    padding-left: 15px;
+    line-height: 1.4em;
+}
+
 .connect-link {
+    margin: 5px 0;
     color: #007acc;
     text-decoration: none;
     font-weight: bold;
@@ -59,3 +84,42 @@ h2 {
     text-decoration: underline;
 }
 
+.container {
+    border: 5px solid teal;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menuItem {
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: gold;
+    color: teal;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.menuItem a {
+    text-decoration: none;
+}
+
+.menuItem a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+#Connect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
