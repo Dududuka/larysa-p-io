@@ -51,3 +51,26 @@ messageForm.addEventListener('submit', function(event) {
 
     event.target.reset();
 })
+
+fetch(`https://api.github.com/users/la-ry-sa/repos`)
+    .then(response => response.text())
+    .then(responseText => {
+        const repositories = JSON.parse(responseText);
+        console.log(repositories);
+        const projectSection = document.getElementById('Projects');
+
+        let projectList = projectSection.querySelector('ul');
+        if (!projectList) {
+            projectList = document.createElement('ul');
+            projectSection.appendChild(projectList);
+        }
+        for (let i = 0; i < repositories.length; i++) {
+            const project = document.createElement('li');
+            project.innerText = repositories[i].name;
+            projectList.appendChild(project);
+        }
+    }
+)
+    .catch(error => {
+        console.error('No projects found', error);
+    })
