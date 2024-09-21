@@ -9,7 +9,7 @@ document.body.appendChild(footer);
 
 const skills = ["JavaScript", "HTML", "CSS", "Python", "SQL", "GitHub"];
 
-const skillsSection = document.getElementById('skills');
+const skillsSection = document.getElementById('Skills');
 const skillsList = skillsSection.querySelector('ul');
 
 for (let i = 0; i < skills.length; i++) {
@@ -40,6 +40,7 @@ messageForm.addEventListener('submit', function(event) {
     const removeButton = document.createElement('button');
     removeButton.innerText = 'remove';
     removeButton.type = 'button';
+    removeButton.style.margin = '10px';
 
     removeButton.addEventListener('click', function() {
         const entry = removeButton.parentNode;
