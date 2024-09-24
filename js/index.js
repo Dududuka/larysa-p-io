@@ -67,7 +67,11 @@ fetch(`https://api.github.com/users/la-ry-sa/repos`)
         }
         for (let i = 0; i < repositories.length; i++) {
             const project = document.createElement('li');
-            project.innerText = repositories[i].name;
+            const projectLink = document.createElement('a');
+            projectLink.href = repositories[i].html_url;
+            projectLink.textContent = repositories[i].name;
+            projectLink.target = '_blank';
+            project.appendChild(projectLink);
             projectList.appendChild(project);
         }
     }
