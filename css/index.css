@@ -84,6 +84,24 @@ h2 {
     line-height: 1.4em;
 }
 
+/* Skills Section Styles */
+#Skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    padding: 0;
+    list-style-type: none;
+}
+
+#Skills ul li {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-width: 100px;
+    text-align: center;
+}
+
 /* Connect Section Styles */
 .connect-link {
     margin: 5px 0;
