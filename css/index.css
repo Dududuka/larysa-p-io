@@ -303,8 +303,8 @@ form[name="leave_message"] textarea {
 }
 
 form[name="leave_message"] textarea {
-    resize: vertical; /* Vertical resizing only */
-    min-height: 120px; /* Ensure good height for text area */
+    resize: vertical; 
+    min-height: 120px; 
 }
 
 form[name="leave_message"] button {
